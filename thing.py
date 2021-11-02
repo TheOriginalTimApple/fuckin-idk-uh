@@ -1,17 +1,10 @@
-#init shit <- bruh what's this mean
 import subprocess 
+import getpass
+
+# @TheOriginalTimApple, what's this do?
 def run(self, cmd):
     completed = subprocess.run(["powershell", "-Command", cmd], capture_output=True)
     return completed
 
-username = input("Idk how to find this on my own so what's your name lamo? >")
-path = "C:\\Users\\"+username+"\\AppData\\Roaming\\Spotify\\prefs\\prefs"
-
-# -get the version number
-
-# -compare to old value
-
-# -if theres a difference, do the thing
-
-# parse the thing and stuff
-# spotify_version = 
+path = "C:\\Users\\"+getpass.getuser()+"\\AppData\\Roaming\\Spotify\\prefs\\prefs"
+print(path)
