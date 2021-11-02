@@ -9,6 +9,7 @@ And now we're here.
 
 - [ ] We need to do the stuff.
 - [ ] Figure out how to parse the files.
-- [ ] Figure out how to do the file path stuff.
+- [X] Figure out how to do the file path stuff.
 - [ ] Figure out how to save the files.
 - [ ] Figure out how to run PowerShell scripts from Python.
+- [ ] Figure out how to make a file/directory
