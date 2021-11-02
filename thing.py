@@ -1,5 +1,8 @@
 #init shit <- bruh what's this mean
-Set-ExecutionPolicy RemoteSigned
+import subprocess 
+def run(self, cmd):
+    completed = subprocess.run(["powershell", "-Command", cmd], capture_output=True)
+    return completed
 
 username = input("Idk how to find this on my own so what's your name lamo? >")
 path = "C:\\Users\\"+username+"\\AppData\\Roaming\\Spotify\\prefs\\prefs"
