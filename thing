@@ -1,0 +1,11 @@
+#init shit
+Path(roaming\Spotify\prefs)
+
+#check for spotify update
+spotify_version = 
+
+
+#if true, check for blocker update
+
+
+#execute install.ps 
