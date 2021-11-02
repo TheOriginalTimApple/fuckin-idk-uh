@@ -1,4 +1,4 @@
-#establishes libraries req'd
+#import modules
 import subprocess
 import getpass
 
