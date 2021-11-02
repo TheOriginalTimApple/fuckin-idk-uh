@@ -1,16 +1,5 @@
-#init shit
-Path(roaming\Spotify\prefs)
-
-#check for spotify update
-spotify_version = 
-
-
-#if true, check for blocker update
-
-
-#execute install.ps 
-
-#this is bad lamo
-
-
-#mald more
+#init shit <- bruh what's this mean
+username = input("Idk how to find this on my own so what's your name lamo")
+path = "C:\\Users\\"+username+"\\AppData\\Roaming\\Spotify\\prefs\\prefs"
+# parse the thing and stuff
+# spotify_version = 
