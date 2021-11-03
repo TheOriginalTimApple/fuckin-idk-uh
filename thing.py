@@ -10,7 +10,7 @@ def run(self, cmd):
 
 # Returns path to Spotify's prefs file
 def get_spot_prefs_path():
-	return pathlib.Path.home().joinpath("AppData","Roaming","Spotify","prefs","prefs")
+	return pathlib.Path.home().joinpath("AppData","Roaming","Spotify","prefs")
 
 # Returns path to LastVersion.dat file.
 def get_last_version_file_path():
@@ -18,7 +18,7 @@ def get_last_version_file_path():
 
 # executes the install .bat file (thing2)
 def reinstall():
-	subprocess.call([r'C:\Users\"+username+"\Documents\GitHub\fuckin-idk-uh\thing2.bat'])
+	subprocess.call([r'pathlib.path.cwd().joinpath("thing2.bat")'])
 
 # gets windows username
 username = getpass.getuser()
