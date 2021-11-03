@@ -4,10 +4,11 @@ import subprocess
 import getpass
 import pathlib
 
+
 # @TheOriginalTimApple, what's this do? Also pick a better name than "run"
-def run(self, cmd):
-    completed = subprocess.run(["powershell", "-Command", cmd], capture_output=True)
-    return completed
+#def run(self, cmd):
+    #completed = subprocess.run(["powershell", "-Command", cmd], capture_output=True)
+    #eturn completed
 
 # Returns path to Spotify's prefs file
 def get_spot_prefs_path():
@@ -17,14 +18,19 @@ def get_spot_prefs_path():
 def get_last_version_file_path():
 	return pathlib.Path.cwd().joinpath("LastVersion.dat")
 
+def get_spotify_version():
+	f = open('prefs', 'r')	
+	SpotifyVersionCurrent = f.readline()
+
+# writes current spotify version to LastVersion.dat
+def update_current_version():
+	f = open('LastVersion.dat','w','-1')
+	f.write(str(SpotifyVersionCurrent))
+	f.close()
+
 # executes the install .bat file (thing2)
 def reinstall():
 	subprocess.call(str(pathlib.Path.cwd().joinpath("thing2.bat")))
-
-def update_current_version():
-	f = open('LastVersion.dat'['w'['-1']])
-	#f.write(SpotifyVersion)
-	f.close()
 
 # gets windows username
 username = getpass.getuser()
@@ -38,10 +44,15 @@ with open(PrefsPath,"r") as f:
 LastVersionPath = get_last_version_file_path()
 with open(LastVersionPath,"r+") as LastVersionFile:
 	#Do the stuff in here
+
 	#Parse, etc.
+
 
 
 #reinstall();
 
 	print("this is a placeholder so vs code won't yell at me. (-:")
 
+
+update_current_version()
+print(SpotifyVersionCurrent)
