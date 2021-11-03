@@ -3,11 +3,6 @@ import subprocess
 import getpass
 import pathlib
 
-# @TheOriginalTimApple, what's this do? Also pick a better name than "run"
-#def run(self, cmd):
-    #completed = subprocess.run(["powershell", "-Command", cmd], capture_output=True)
-    #eturn completed
-
 def get_spot_prefs_path():
 	# Returns path to Spotify's prefs file
 	return pathlib.Path.home().joinpath("AppData","Roaming","Spotify","prefs")
@@ -15,7 +10,6 @@ def get_spot_prefs_path():
 def get_last_version_file_path():
 	# Returns path to LastVersion.dat file.
 	return pathlib.Path.cwd().joinpath("LastVersion.dat")
-
 def get_spotify_version():
 	# obtains current spotify version
 	f = open( get_spot_prefs_path() , 'r')	
@@ -37,7 +31,6 @@ def get_second_quote_index(stringToScan):
 def get_first_quote_index(stringToScan):
 	# Returns location of first quote
 	return int(stringToScan.find('"'))
-
 def reinstall():
 	# executes the install .bat file (thing2)
 	subprocess.call(str(pathlib.Path.cwd().joinpath("thing2.bat")))
