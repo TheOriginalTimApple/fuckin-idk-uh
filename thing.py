@@ -24,7 +24,7 @@ def reinstall():
 username = getpass.getuser()
 
 # opens prefs file in read-only
-PrefsPath = get_spot_prefs_path())
+PrefsPath = get_spot_prefs_path()
 with open(PrefsPath,"r") as f:
 	PrefsFile = f.read
 print(f.closed) # Checks to make sure the file's closed and I'm not doing a dumb-dumb. Delete later.
