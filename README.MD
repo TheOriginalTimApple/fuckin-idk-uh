@@ -10,7 +10,8 @@ And now we're here.
 - [ ] We need to do the stuff.
 - [X] Figure out how to parse the files.
 - [X] Figure out how to do the file path stuff.
-- [ ] Figure out how to save the files.
+- [X] Figure out how to save the files.
 - [ ] Figure out how to run PowerShell scripts from Python.
        ->Use a .bat instead?
 - [X] Figure out how to make a file/directory
+- [ ] Make it run every time Spotify is opened 
