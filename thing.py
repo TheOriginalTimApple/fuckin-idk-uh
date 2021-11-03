@@ -15,7 +15,7 @@ def get_stored_version_file_path():
 
 def get_spot_version():
 	# obtains current spotify version
-	f = open( get_spot_prefs_path() , 'r')	
+	f = open( get_spot_prefs_path() , 'r')
 	SpotifyVersion = f.readline() 
 	f.close()	
 	return SpotifyVersion
