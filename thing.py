@@ -16,16 +16,6 @@ def get_spotify_version():
 	f.close()	
 	return SpotifyVersion
 def update_current_version():
-	# writes current spotify version to StoredVersion.dat
-	f = open("StoredVersion.dat", "w")
-	f.write(get_spotify_version())
-	f.close()
-def get_second_quote_index(stringToScan):
-	# Returns location of second quote
-	return int(stringToScan.find("\n"))-1 
-def get_first_quote_index(stringToScan):
-	# Returns location of first quote
-	return int(stringToScan.find('"'))
 def reinstall():
 	# executes the install .bat file (thing2)
 	subprocess.call(str(pathlib.Path.cwd().joinpath("thing2.bat")))
