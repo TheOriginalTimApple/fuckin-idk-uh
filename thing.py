@@ -1,8 +1,8 @@
-#import modules
 from os import write
 import subprocess
 import getpass
 import pathlib
+
 
 
 # @TheOriginalTimApple, what's this do? Also pick a better name than "run"
@@ -11,11 +11,12 @@ import pathlib
     #eturn completed
 
 # Returns path to Spotify's prefs file
+
 def get_spot_prefs_path():
+	# Returns path to Spotify's prefs file
 	return pathlib.Path.home().joinpath("AppData","Roaming","Spotify","prefs")
-	
-# Returns path to LastVersion.dat file.
 def get_last_version_file_path():
+	# Returns path to LastVersion.dat file.
 	return pathlib.Path.cwd().joinpath("LastVersion.dat")
 
 def get_spotify_version():
@@ -27,6 +28,12 @@ def update_current_version():
 	f = open('LastVersion.dat','w','-1')
 	f.write(str(SpotifyVersionCurrent))
 	f.close()
+def get_second_quote_index(stringToScan):
+	# Returns location of second quote
+	return int(stringToScan.find("\n"))-1 
+def get_first_quote_index(stringToScan):
+	# Returns location of first quote
+	return int(stringToScan.find('"'))
 
 # executes the install .bat file (thing2)
 def reinstall():
@@ -56,3 +63,4 @@ with open(LastVersionPath,"r+") as LastVersionFile:
 
 update_current_version()
 print(SpotifyVersionCurrent)
+	print("this is a placeholder so vs code won't yell at me. (-:")
