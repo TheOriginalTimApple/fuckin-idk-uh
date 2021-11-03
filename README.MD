@@ -7,7 +7,7 @@ And now we're here.
 
 ## To-Do
 
-- [ ] We need to do the stuff.
+- [X] We need to do the stuff.
 - [X] Figure out how to parse the files.
 - [X] Figure out how to do the file path stuff.
 - [X] Figure out how to save the files.
