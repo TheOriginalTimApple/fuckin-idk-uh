@@ -3,6 +3,8 @@ import subprocess
 import getpass
 import pathlib
 
+
+
 def get_spot_prefs_path():
 	# Returns path to Spotify's prefs file
 	return pathlib.Path.home().joinpath("AppData","Roaming","Spotify","prefs")
@@ -13,16 +15,10 @@ def get_stored_version_file_path():
 
 def get_spot_version():
 	# obtains current spotify version
-	f = open( get_spot_prefs_path() , 'r')	
+	f = open( get_spot_prefs_path() , 'r')
 	SpotifyVersion = f.readline() 
 	f.close()	
 	return SpotifyVersion
-
-#def update_current_version():
-	f = open('LastVersion.dat'['w'['-1']])
-	f.write(get_spotify_version())
-	f.close()
-	# this is tagged because it will probably be replaced with a var
 
 def store_spot_version():
 	# stores the current version of Spotify in StoredVersion.dat
@@ -58,6 +54,12 @@ def spot_version_compare():
 
 	else:
 		print('Spotify Has Not Updated')
+		
+# def init():
+# 	if:
+# 		file = 'StoredVersion.dat'
+# 		store_spot_version()
+# 	else:
 
 # gets windows username
 username = getpass.getuser()
