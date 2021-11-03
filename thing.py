@@ -56,10 +56,10 @@ def spot_version_compare():
 		print('Spotify Has Not Updated')
 		
 def init():
-	if :
-	file = 'StoredVersion.dat'
-	store_spot_version()
-	else :
+	if:
+		file = 'StoredVersion.dat'
+		store_spot_version()
+	else:
 
 # gets windows username
 username = getpass.getuser()
