@@ -16,6 +16,9 @@ def get_spotify_version():
 	f.close()	
 	return SpotifyVersion
 def update_current_version():
+	f = open('LastVersion.dat'['w'['-1']])
+	#f.write(SpotifyVersion)
+	f.close()
 def reinstall():
 	# executes the install .bat file (thing2)
 	subprocess.call(str(pathlib.Path.cwd().joinpath("thing2.bat")))
