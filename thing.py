@@ -27,7 +27,7 @@ username = getpass.getuser()
 PrefsPath = get_spot_prefs_path())
 with open(PrefsPath,"r") as f:
 	PrefsFile = f.read
-print(f.closed) #Checks to make sure the file's closed and I'm not doing a dumb-dumb. Delete later.
+print(f.closed) # Checks to make sure the file's closed and I'm not doing a dumb-dumb. Delete later.
 
 # opens last version file in read+write
 LastVersionPath = get_last_version_file_path()
