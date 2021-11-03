@@ -10,7 +10,7 @@ def run(self, cmd):
 
 # Returns path to Spotify's prefs file
 def get_spot_prefs_path():
-	return pathlib.Path.home().joinpath("AppData","Roaming","Spotify","prefs","prefs")
+	return pathlib.Path.home().joinpath("AppData","Roaming","Spotify","prefs")
 
 # Returns path to LastVersion.dat file.
 def get_last_version_file_path():
