@@ -4,34 +4,28 @@ import subprocess
 import getpass
 import pathlib
 
-# @TheOriginalTimApple, what's this do? Also pick a better name than "run"
 def run(self, cmd):
+	# @TheOriginalTimApple, what's this do? Also pick a better name than "run"
     completed = subprocess.run(["powershell", "-Command", cmd], capture_output=True)
     return completed
-
-# Returns path to Spotify's prefs file
 def get_spot_prefs_path():
+	# Returns path to Spotify's prefs file
 	return pathlib.Path.home().joinpath("AppData","Roaming","Spotify","prefs")
-	
-# Returns path to LastVersion.dat file.
 def get_last_version_file_path():
+	# Returns path to LastVersion.dat file.
 	return pathlib.Path.cwd().joinpath("LastVersion.dat")
-
-# executes the install .bat file (thing2)
 def reinstall():
+	# executes the install .bat file (thing2)
 	subprocess.call(str(pathlib.Path.cwd().joinpath("thing2.bat")))
-
 def update_current_version():
 	f = open('LastVersion.dat'['w'['-1']])
 	#f.write(SpotifyVersion)
 	f.close()
-
-# Returns location of second quote
 def get_second_quote_index(stringToScan):
+	# Returns location of second quote
 	return int(stringToScan.find("\n"))-1 
-
-# Returns location of first quote
 def get_first_quote_index(stringToScan):
+	# Returns location of first quote
 	return int(stringToScan.find('"'))
 
 # gets windows username
