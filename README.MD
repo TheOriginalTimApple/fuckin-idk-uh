@@ -14,7 +14,8 @@ And now we're here.
 - [X] Figure out how to run PowerShell scripts from Python.
       ~~->Use a .bat instead?~~yes
 - [X] Figure out how to make a file/directory
-- [ ] Make it run every time Spotify is opened 
+- [ ] Make it run every time Spotify is opened
 - [ ] Integrate the auto-updater w/ BlockTheSpot
-- [ ] Polish 
+- [ ] Polish
 - [ ] Establish file creation script thing in the python program
+- [ ] Add instructions for using program into this README
