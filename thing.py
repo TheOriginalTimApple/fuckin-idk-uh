@@ -6,19 +6,23 @@ import pathlib
 def get_spot_prefs_path():
 	# Returns path to Spotify's prefs file
 	return pathlib.Path.home().joinpath("AppData","Roaming","Spotify","prefs")
+
 def get_stored_version_file_path():
 	# Returns path to StoredVersion.dat file.
 	return pathlib.Path.cwd().joinpath("StoredVersion.dat")
+
 def get_spotify_version():
 	# obtains current spotify version
 	f = open( get_spot_prefs_path() , 'r')	
 	SpotifyVersion = f.readline() 
 	f.close()	
 	return SpotifyVersion
+
 def update_current_version():
 	f = open('LastVersion.dat'['w'['-1']])
-	#f.write(SpotifyVersion)
+	f.write(get_spotify_version())
 	f.close()
+
 def reinstall():
 	# executes the install .bat file (thing2)
 	subprocess.call(str(pathlib.Path.cwd().joinpath("thing2.bat")))
@@ -43,5 +47,3 @@ with open(StoredVersionPath,"r+") as StoredVersionFile:
 
 # get_spot_prefs_path()
 # update_current_version()
-
-
