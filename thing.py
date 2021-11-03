@@ -1,4 +1,3 @@
-#import modules
 from os import write
 import subprocess
 import getpass
