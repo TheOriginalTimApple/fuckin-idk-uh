@@ -26,6 +26,14 @@ def update_current_version():
 	#f.write(SpotifyVersion)
 	f.close()
 
+# Returns location of second quote
+def get_second_quote_index(stringToScan):
+	return int(stringToScan.find("\n"))-1 
+
+# Returns location of first quote
+def get_first_quote_index(stringToScan):
+	return int(stringToScan.find('"'))
+
 # gets windows username
 username = getpass.getuser()
 
@@ -37,11 +45,4 @@ with open(PrefsPath,"r") as f:
 # opens last version file in read+write
 LastVersionPath = get_last_version_file_path()
 with open(LastVersionPath,"r+") as LastVersionFile:
-	#Do the stuff in here
-	#Parse, etc.
-
-
-#reinstall();
-
 	print("this is a placeholder so vs code won't yell at me. (-:")
-
