@@ -16,6 +16,13 @@ def get_spot_prefs_path():
 def get_last_version_file_path():
 	return pathlib.Path.cwd().joinpath("LastVersion.dat")
 
+# executes the install .bat file (thing2)
+def reinstall():
+	subprocess.call([r'C:\Users\"+username+"\Documents\GitHub\fuckin-idk-uh\thing2.bat'])
+
+# gets windows username
+username = getpass.getuser()
+
 # opens prefs file in read-only
 PrefsPath = get_spot_prefs_path())
 with open(PrefsPath,"r") as f:

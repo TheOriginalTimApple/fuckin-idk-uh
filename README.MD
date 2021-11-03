@@ -12,4 +12,5 @@ And now we're here.
 - [X] Figure out how to do the file path stuff.
 - [ ] Figure out how to save the files.
 - [ ] Figure out how to run PowerShell scripts from Python.
+       ->Use a .bat instead?
 - [ ] Figure out how to make a file/directory
