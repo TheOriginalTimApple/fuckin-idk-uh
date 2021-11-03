@@ -21,6 +21,11 @@ def get_last_version_file_path():
 def reinstall():
 	subprocess.call(str(pathlib.Path.cwd().joinpath("thing2.bat")))
 
+def update_current_version():
+	f = open('LastVersion.dat'['w'['-1']])
+	#f.write(SpotifyVersion)
+	f.close()
+
 # gets windows username
 username = getpass.getuser()
 
