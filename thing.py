@@ -6,7 +6,6 @@ import pathlib
 def get_spot_prefs_path():
 	# Returns path to Spotify's prefs file
 	return pathlib.Path.home().joinpath("AppData","Roaming","Spotify","prefs")
-
 def get_last_version_file_path():
 	# Returns path to LastVersion.dat file.
 	return pathlib.Path.cwd().joinpath("LastVersion.dat")
@@ -16,18 +15,14 @@ def get_spotify_version():
 	SpotifyVersion = f.readline() 
 	f.close()	
 	return SpotifyVersion
-	
-
 def update_current_version():
 	# writes current spotify version to LastVersion.dat
 	f = open("LastVersion.dat", "w")
 	f.write(get_spotify_version())
 	f.close()
-
 def get_second_quote_index(stringToScan):
 	# Returns location of second quote
 	return int(stringToScan.find("\n"))-1 
-
 def get_first_quote_index(stringToScan):
 	# Returns location of first quote
 	return int(stringToScan.find('"'))
