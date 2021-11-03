@@ -18,12 +18,6 @@ def get_spot_version():
 	f.close()	
 	return SpotifyVersion
 
-#def update_current_version():
-	f = open('LastVersion.dat'['w'['-1']])
-	f.write(get_spotify_version())
-	f.close()
-	# this is tagged because it will probably be replaced with a var
-
 def store_spot_version():
 	# stores the current version of Spotify in StoredVersion.dat
 	f = open('StoredVersion.dat', 'w')
