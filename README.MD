@@ -19,3 +19,7 @@ And now we're here.
 - [ ] Polish
 - [ ] Establish file creation script thing in the python program
 - [ ] Add instructions for using program into this README
+
+## Credits
+
+Big shout-out to the people who made [Block the Spot!](https://github.com/mrpond/BlockTheSpot)
