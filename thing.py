@@ -9,11 +9,7 @@ def get_spot_prefs_path(username):
 # obtains previous version info
 def get_last_version_file_path(username):
 	return "C:\\Users\\"+username+"\\AppData\\Roaming\\AutoSpotBlock\\LastVersion.dat"
-	# might have to create that directory before making the file or something
-    # >the directory may need to contain the drive name, not just "C:"
-	# >>No
-	# >>>oh ok, it errored out when I ran it - it says the directory doesn't exist
-	# >>>>I think there needs to be a command to create that file...
+
 
 # executes the install .bat file (thing2)
 def reinstall():
@@ -26,7 +22,7 @@ username = getpass.getuser()
 PrefsPath = get_spot_prefs_path(username)
 with open(PrefsPath,"r") as f:
 	PrefsFile = f.read
-print(f.closed) #Checks to make sure the file's closed and I'm not doing a dumb-dumb. Delete later.
+print(f.closed) # Checks to make sure the file's closed and I'm not doing a dumb-dumb. Delete later.
 
 # opens last version file in read+write
 LastVersionPath = get_last_version_file_path(username)
