@@ -1,4 +1,5 @@
 #import modules
+from os import write
 import subprocess
 import getpass
 import pathlib
@@ -11,14 +12,14 @@ def run(self, cmd):
 # Returns path to Spotify's prefs file
 def get_spot_prefs_path():
 	return pathlib.Path.home().joinpath("AppData","Roaming","Spotify","prefs")
-
+	
 # Returns path to LastVersion.dat file.
 def get_last_version_file_path():
 	return pathlib.Path.cwd().joinpath("LastVersion.dat")
 
 # executes the install .bat file (thing2)
 def reinstall():
-	subprocess.call([r'pathlib.path.cwd().joinpath("thing2.bat")'])
+	subprocess.call(str(pathlib.Path.cwd().joinpath("thing2.bat")))
 
 # gets windows username
 username = getpass.getuser()
@@ -36,3 +37,5 @@ with open(LastVersionPath,"r+") as LastVersionFile:
 	#Parse, etc.
 	print("this is a placeholder so vs code won't yell at me. (-:")
 print(LastVersionFile.closed)
+
+#reinstall();
