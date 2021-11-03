@@ -17,7 +17,7 @@ def get_last_version_file_path(username):
 
 # executes the install .bat file (thing2)
 def reinstall():
-	subprocess.call([r'C:\Users\"+username+"\Documents\GitHub\fuckin-idk-uh'])
+	subprocess.call([r'C:\Users\"+username+"\Documents\GitHub\fuckin-idk-uh\thing2.bat'])
 
 # gets windows username
 username = getpass.getuser()
