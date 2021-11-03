@@ -28,14 +28,15 @@ username = getpass.getuser()
 PrefsPath = get_spot_prefs_path()
 with open(PrefsPath,"r") as f:
 	PrefsFile = f.read
-print(f.closed) # Checks to make sure the file's closed and I'm not doing a dumb-dumb. Delete later.
 
 # opens last version file in read+write
 LastVersionPath = get_last_version_file_path()
 with open(LastVersionPath,"r+") as LastVersionFile:
 	#Do the stuff in here
 	#Parse, etc.
-	print("this is a placeholder so vs code won't yell at me. (-:")
-print(LastVersionFile.closed)
+
 
 #reinstall();
+
+	print("this is a placeholder so vs code won't yell at me. (-:")
+
