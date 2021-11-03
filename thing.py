@@ -25,11 +25,13 @@ def get_spot_version():
 	# this is tagged because it will probably be replaced with a var
 
 def store_spot_version():
+	# stores the current version of Spotify in StoredVersion.dat
 	f = open('StoredVersion.dat', 'w')
 	f.write(get_spot_version())
 	f.close
 
 def return_old_spot_version():
+	# Creates a variable equal to the version data within StoredVersion.dat
 	f = open('StoredVersion.dat', 'r')
 	OldSpotVersion = f.readline()
 	f.close
@@ -41,8 +43,19 @@ def reinstall():
 
 def spot_version_compare():
 	if get_spot_version() != return_old_spot_version():
-		reinstall()
-		print('Spotify Update Detected')
+		print('Spotify Version Change Detected')
+		print('It is reccomended that you reinstall BlockTheSpot. Would you like to reinstall? (y/n)')
+		answer = input()
+
+		if answer == 'y' :
+			print('Reinstalling')
+			reinstall()
+		elif answer == 'n' :
+			print('BlockTheSpot will not reinstall')
+		else:
+			print('Invalid Answer')
+			spot_version_compare()
+
 	else:
 		print('Spotify Has Not Updated')
 
