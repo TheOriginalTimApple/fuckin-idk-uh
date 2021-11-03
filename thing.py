@@ -6,11 +6,9 @@ import pathlib
 def get_spot_prefs_path():
 	# Returns path to Spotify's prefs file
 	return pathlib.Path.home().joinpath("AppData","Roaming","Spotify","prefs")
-
 def get_stored_version_file_path():
 	# Returns path to StoredVersion.dat file.
 	return pathlib.Path.cwd().joinpath("StoredVersion.dat")
-
 def get_spotify_version():
 	# obtains current spotify version
 	f = open( get_spot_prefs_path() , 'r')	
@@ -28,7 +26,6 @@ def get_second_quote_index(stringToScan):
 def get_first_quote_index(stringToScan):
 	# Returns location of first quote
 	return int(stringToScan.find('"'))
-
 def reinstall():
 	# executes the install .bat file (thing2)
 	subprocess.call(str(pathlib.Path.cwd().joinpath("thing2.bat")))
