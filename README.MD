@@ -2,7 +2,7 @@
 
 ## A Bad Thing
 
-So basically @TheOriginalTimApple decided to do a thing.
+So basically [@TheOriginalTimApple](https://github.com/TheOriginalTimApple) decided to do a thing.
 And now we're here.
 
 ## To-Do
