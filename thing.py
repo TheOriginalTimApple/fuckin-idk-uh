@@ -35,7 +35,7 @@ def return_old_spot_version():
 
 def reinstall():
 	# executes the install .bat file (thing2)
-	subprocess.call(str(pathlib.Path.cwd().joinpath("thing2.bat")))
+	subprocess.call(str(pathlib.Path.cwd().joinpath('thing2.bat')))
 
 def spot_version_compare():
 	if get_spot_version() != return_old_spot_version():
@@ -43,10 +43,10 @@ def spot_version_compare():
 		print('It is reccomended that you reinstall BlockTheSpot. Would you like to reinstall? (y/n)')
 		answer = input()
 
-		if answer == 'y' :
+		if answer == 'y' 'Y' :
 			print('Reinstalling')
 			reinstall()
-		elif answer == 'n' :
+		elif answer == 'n' 'N' :
 			print('BlockTheSpot will not reinstall')
 		else:
 			print('Invalid Answer')
@@ -55,11 +55,9 @@ def spot_version_compare():
 	else:
 		print('Spotify Has Not Updated')
 		
-# def init():
-# 	if:
-# 		file = 'StoredVersion.dat'
-# 		store_spot_version()
-# 	else:
+def init():
+		f = open('StoredVersion.dat', 'x')
+		f.close()
 
 # gets windows username
 username = getpass.getuser()
