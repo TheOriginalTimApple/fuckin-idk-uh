@@ -5,6 +5,14 @@
 So basically [@TheOriginalTimApple](https://github.com/TheOriginalTimApple) decided to do a thing.
 And now we're here.
 
+## How It Works
+
+Whenever "thing.py" is executed, it will detect changes to your Spotify version. If a change is detected, the program will ask you if you would like to reinstall BlockTheSpot (probably from PS). You can then decide if you would like it to or not. If you input y or Y, BlockTheSpot's install .bat will be executed, prompting a full reinstall of the blocker. If you input n or N, the program will end. If you input anything besides that, the program will output "Invalid Answer" and re-prompt you for an answer. 
+
+## How to Get it to Work
+
+Basically, if you download the .zip and execute thing.py from within the folder, the detector will run (I think). Currently, there is no automatic functionality, so you will have to run it manually I guess. 
+
 ## To-Do
 
 - [X] We need to do the stuff.
