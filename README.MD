@@ -25,8 +25,8 @@ Basically, if you download the .zip and execute thing.py from within the folder,
 - [ ] Make it run every time Spotify is opened
 - [ ] Integrate the auto-updater w/ BlockTheSpot
 - [ ] Polish
-- [ ] Establish file creation script thing in the python program
-- [ ] Add instructions for using program into this README
+- [X] Establish file creation script thing in the python program
+- [X] Add instructions for using program into this README
 
 ## Credits
 
