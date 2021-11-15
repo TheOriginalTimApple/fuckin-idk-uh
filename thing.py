@@ -40,7 +40,7 @@ def reinstall():
 def spot_version_compare():
 	if get_spot_version() != return_old_spot_version():
 		print('Spotify Version Change Detected')
-		print('It is reccomended that you reinstall BlockTheSpot. Would you like to reinstall? (y/n)')
+		print('It is recommended that you reinstall BlockTheSpot. Would you like to reinstall? (y/n)')
 		answer = input()
 
 		if answer == 'y' 'Y' :
